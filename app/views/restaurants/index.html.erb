@@ -1,0 +1,12 @@
+<h1>Restaurants</h1>
+
+<p>This is the GET /restaurants</p>
+
+<ul>
+  <% @restaurants.each do |restaurant| %>
+    <li><%=  restaurant.name %></li>
+    <%= link_to "Show this restaurant", restaurant %>
+  <% end  %>
+</ul>
+
+<%= link_to "Add a new Restaurant", new_restaurant_path %>
